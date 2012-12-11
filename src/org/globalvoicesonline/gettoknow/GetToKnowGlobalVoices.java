@@ -29,7 +29,8 @@ public class GetToKnowGlobalVoices extends DroidGap
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        super.loadUrl("file:///android_asset/www/index.html");
+        super.setIntegerProperty("splash", R.drawable.splash);
+        super.loadUrl("file:///android_asset/www/index.html", 10000);
     }
 }
 
