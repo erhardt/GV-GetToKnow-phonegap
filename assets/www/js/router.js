@@ -8,6 +8,7 @@ var AppRouter = Backbone.Router.extend({
     routes: {
         ""                  : "list",
         "countries/:id"	    : "countryDetails",
+        "about"             : "aboutPage"
     },
 
     initialize: function () {
@@ -28,9 +29,14 @@ var AppRouter = Backbone.Router.extend({
      * Load a specific country and see the stories for it
      */
     countryDetails: function(id){
-        console.log("AppRouter: Contry "+id+" Details");
+        console.log("AppRouter: Country "+id+" Details");
         var country = app.countryCollection.get(id);
         $("#content").html(new CountryDetailView({model: country}).el);
+    },
+
+    aboutPage: function(){
+        console.log("AppRouter: aboutPage")
+        $("#content").html(new AboutPageView().el);
     }
 
 });
