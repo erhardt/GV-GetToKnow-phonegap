@@ -4,6 +4,12 @@ Android PhoneGap/Cordova Example - Get To Know : Global Voices
 Small example PhoneGap applicaton for the MAS.s60 course.  This is built with PhoneGap,
 backbone.js and jquery-mobile.
 
+Modifications by Erhardt
+------------------------
+* Added an About page
+* Added a splash page
+* Added search (filter) functionality to country list
+
 Installation
 ------------
 
