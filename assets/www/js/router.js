@@ -19,6 +19,9 @@ var AppRouter = Backbone.Router.extend({
 	list: function() {
         console.log("AppRouter: list");
         $("#content").html(new CountryListView({model:app.countryCollection.models}).el);
+        
+        //refresh data filter search function after list populated
+        $('#country-list').listview();
     },
 
     /**

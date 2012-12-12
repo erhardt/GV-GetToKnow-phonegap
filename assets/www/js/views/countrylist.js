@@ -13,7 +13,7 @@ window.CountryListView = Backbone.View.extend({
     render: function () {
         var countries = this.model;
         console.log("  CountryListView: render ("+countries.length+" countries)");
-        this.$el.html('<ul id="country-list" data-role="listview" class="ui-listview"></ul>');
+        this.$el.html('<ul id="country-list" data-role="listview" data-filter="true" data-filter-placeholder="Search..." class="ui-listview"></ul>');
 
         for(i=0;i<countries.length;i++){
             this.$('#country-list').append(
